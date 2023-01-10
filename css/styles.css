@@ -84,16 +84,39 @@ h6 {
 
 
 :root {
+
+    /* Colors  */
     --Soft-blue: hsl(215, 51%, 70%);
     --Cyan: hsl(178, 100%, 50%);
-    --Very-dark-blue: hsl(217, 54%, 11%);
-    --Very-dark-blue: hsl(216, 50%, 16%);
-    --Very-dark-blue: hsl(215, 32%, 27%);
+    --Very-dark-blue-MainBG: hsl(217, 54%, 11%);
+    --Very-dark-blue-CardBG: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
     --White: hsl(0, 0%, 100%);
+
+    /* Fonts Types */
+    --fs: 18px;
+    --ff-Main: 'Outfit', sans-serif;
+    
 }
 
-
-
+/* Styling the Body Start  */
 body {
-    background-color: var(--Very-dark-blue);
+    background-color: var(--Very-dark-blue-MainBG);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: var(--ff-Main);
+
+}
+
+/* Styling the Body End  */
+
+article {
+    margin: 0 1rem;
+    background-color: var(--Very-dark-blue-CardBG);
+    padding: 1.5rem;
+    border-radius: 15px;
+
+
+
 }
