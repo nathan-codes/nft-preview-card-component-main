@@ -106,17 +106,42 @@ body {
     flex-direction: column;
     justify-content: center;
     font-family: var(--ff-Main);
-
 }
 
 /* Styling the Body End  */
+
 
 article {
     margin: 0 1rem;
     background-color: var(--Very-dark-blue-CardBG);
     padding: 1.5rem;
     border-radius: 15px;
-
-
-
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
+
+
+article img {
+    border-radius: 10px ;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    color: var(--White);
+    margin: 1rem 0;
+}
+
+p{
+    color: var(--Soft-blue);
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+
+.flex-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.flex-group span.
+
