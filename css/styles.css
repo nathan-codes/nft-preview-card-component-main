@@ -105,6 +105,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     font-family: var(--ff-Main);
 }
 
@@ -117,13 +118,17 @@ article {
     padding: 1.5rem;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    max-width: 350px;
+
 }
 
 
 article .equi-Img {
     border-radius: 10px;
-    margin-bottom: 1rem;
+
 }
+
+
 
 h1 {
     color: var(--White);
@@ -154,10 +159,16 @@ img.euth-icon {
     top: 4px;
 }
 
+img.clock-img {
+    margin-right: .3rem;
+    position: relative;
+    top: 3px;
+}
+
 
 span.days-left {
     color: var(--Soft-blue);
- 
+
 }
 
 hr {
@@ -183,6 +194,30 @@ span.creationText {
     bottom: 10px;
 }
 
-div.credit-section {
-    border: 1px solid red;
+span.Creator {
+    color: var(--White);
+}
+
+
+
+/* Styling The Hover States */
+
+.hover:hover {
+    cursor: pointer;
+    color: var(--Cyan);
+}
+
+
+
+.attribution {
+
+    position: absolute;
+    bottom: 20px;
+    font-size: 16px;
+    color: var(--White);
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }
