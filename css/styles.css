@@ -119,15 +119,43 @@ article {
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     max-width: 350px;
-
+    
 }
 
+.top-img-container{
+position: relative;
+}
 
 article .equi-Img {
     border-radius: 10px;
+   
+}
+
+
+article div.overlay {
+    border-radius: 10px;
+   width: 100%;
+   height: 99%;
+   top: 0;
+   background-color: hsl(178, 100%, 50%, 60%);
+   position: absolute;
+   opacity: 0;
+   transition:   0.3s ease-out;
+   z-index: 999;
+}
+
+article div.overlay img{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
 
 }
 
+article div.overlay:hover{
+    opacity: 1;
+    cursor: pointer;
+}
 
 
 h1 {
@@ -168,8 +196,9 @@ img.clock-img {
 
 span.days-left {
     color: var(--Soft-blue);
-
 }
+
+
 
 hr {
     border: 0;
@@ -184,8 +213,8 @@ hr {
     border-radius: 50%;
     width: 10%;
     margin-right: 1rem;
-
 }
+
 
 
 span.creationText {
@@ -218,6 +247,6 @@ span.Creator {
     text-align: center;
 }
 
-.attribution a {
+div.attribution a {
     color: hsl(228, 45%, 44%);
 }
